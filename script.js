@@ -141,7 +141,18 @@ window.addEventListener('DOMContentLoaded', () => {
       lat: -12.093381670154521, lng:-77.02619762282963,
       note:'Me encanta que cambiamos el parque de minas, por el parque cerca a tu trabajo. Amamos los parques.',
      media:[ {type:'image', src:'img/parquejavier.jpeg'} ]
+    },
+                
+        {
+      id:'anima',
+      title:'Anima e Cuore',
+      date:'2025-08-02',
+      category:'Paseo',
+      lat: -12.096864787244689, lng:-77.03805565557073,
+      note:'Que todos mis cumpleaños sean contigo.',
+     media:[ {type:'image', src:'img/anima.jpeg'} ]
     }
+
   ];
 
   // ==== 2) Referencias UI ====
@@ -392,3 +403,4 @@ function makePopup(m){
   });
 
 });
+
