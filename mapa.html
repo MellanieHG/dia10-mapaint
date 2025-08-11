@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mapa de Recuerdos 💫 — API Libre</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <button id="menuToggle" class="btn" aria-label="Abrir/cerrar menú">☰</button>
+    <h1>Mapa de recuerdos 💫</h1>
+  </header>
+
+  <aside id="sidebar">
+    <div class="controls">
+      <label for="q">Buscar</label>
+      <input id="q" type="text" placeholder="Palabra clave (lugar, nota, canción)" />
+
+      <div class="chips" id="categoryChips"></div>
+
+      <label>Rango de fechas</label>
+      <div class="row-2">
+        <input id="from" type="date" />
+        <input id="to" type="date" />
+      </div>
+
+      <div class="toolbar">
+        <button class="btn" id="btnRoute">➰ Trazar ruta</button>
+        <button class="btn" id="btnReset">↺ Limpiar filtros</button>
+      </div>
+    </div>
+    <div id="list"></div>
+  </aside>
+
+  <main id="map"></main>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
