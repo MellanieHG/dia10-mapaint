@@ -131,9 +131,17 @@ window.addEventListener('DOMContentLoaded', () => {
       lat: -12.01146316032545, lng:-77.0541766767198,
       note:'Todas las salidas que nos quedabamos en el pasillo de mi casa, cada tarde. Con Omar de compañero.',
       media:[ {type:'image', src:'img/casa.jpeg'} ]
+    },
+    
+        {
+      id:'parque-javier-prado',
+      title:'Plaza Andrés Avelino Cáceres',
+      date:'2025-08-05',
+      category:'Paseo',
+      lat: -12.093381670154521, lng:-77.02619762282963,
+      note:'Me encanta que cambiamos el parque de minas, por el parque cerca a tu trabajo. Amamos los parques.',
+     media:[ {type:'image', src:'img/parquejavier.jpeg'} ]
     }
-
-
   ];
 
   // ==== 2) Referencias UI ====
@@ -382,4 +390,5 @@ function makePopup(m){
       if(slide && slide.requestFullscreen){ slide.requestFullscreen(); }
     }
   });
+
 });
